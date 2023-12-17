@@ -6,6 +6,8 @@ It features:
 * Jumping (duh)
 * Standing, Crouching, Proning
 * Sprinting, Tactical Sprinting from Modern Warfare 2019 (Gonna implement it tomorrow)
+* Smooth Camera Follow (with or without lerping)
+* Smooth Mouse Look (Smoothing is optional, you can get the disable the smoothing and get the raw look if you set the "Smoothing" value to 1)
 
 I'm planning to:
 * Add climbing mechanics
