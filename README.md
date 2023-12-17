@@ -1,6 +1,17 @@
 # Call-of-Duty-Movement-in-Godot-4
 A Godot 4 project that imitates the movement mechanics of Call of Duty games
 
+It features:
+* Almost the same spatial movement due to being based on Quake 3's movement system just like Call of Duty's has been 
+* Jumping (duh)
+* Standing, Crouching, Proning
+* Sprinting, Tactical Sprinting from Modern Warfare 2019 (Gonna implement it tomorrow)
+
+I'm planning to:
+* Add climbing mechanics
+* Add swimming mechanics
+* Keep my sanity while trying to do all these as optimized as possible
+
 In order to maximize the code optimization I have:
 
 * used engine calls as few as possible, and cached references when I've done as such
