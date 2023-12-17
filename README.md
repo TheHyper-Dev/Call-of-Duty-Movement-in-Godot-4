@@ -47,4 +47,4 @@ You need to assign these Input Actions by clicking in Projects/Project Settings/
 
 Read comments in the codes for further explanations.
 
-My discord if you have any questions, I'll try to help as much as I can: the_hyper_dev
+My discord if you have any questions, I'll try to help as much as I can: **the_hyper_dev**
