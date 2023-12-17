@@ -61,7 +61,7 @@ public sealed partial class Movement : Resource
                 }
                 else if (input.IsAction(PlayerInput.Mappings.prone))
                 {
-                    ChangeStance(stance != StanceState.Prone ? StanceState.Standing : StanceState.Prone);
+                    ChangeStance(stance == StanceState.Prone ? StanceState.Standing : StanceState.Prone);
                 }
             }
             else

@@ -63,8 +63,9 @@ public sealed partial class Look : Resource
             float lerp_speed_hor = lerp_speed_delta * controller.move.horSpeed;
             float lerp_speed_Y = lerp_speed_delta * Math.Abs(controller.move.velocity.Y);
 
-            if (lerp_speed_Y < lerp_speed_delta)
-                lerp_speed_Y = lerp_speed_delta;
+            float stance_change_delta = dt * controller.move.stance_change_speed;
+            if (lerp_speed_Y < stance_change_delta)
+                lerp_speed_Y = stance_change_delta;
 
             look_pos.X = Mathf.MoveToward(look_pos.X, controller_pos.X, lerp_speed_hor);
             look_pos.Y = Mathf.MoveToward(look_pos.Y, controller_pos.Y + height_offset + controller.move.current_stance_look_height, lerp_speed_Y); // smooth ascending/descending
