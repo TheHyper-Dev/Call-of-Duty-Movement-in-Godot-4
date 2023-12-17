@@ -10,6 +10,8 @@ It features:
 I'm planning to:
 * Add climbing mechanics
 * Add swimming mechanics
+* Idle Sway
+* Camera Tilt during Sprinting or Tac Sprinting
 * Keep my sanity while trying to do all these as optimized as possible
 
 In order to maximize the code optimization I have:
