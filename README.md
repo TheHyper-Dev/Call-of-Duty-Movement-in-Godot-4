@@ -12,6 +12,7 @@ I'm planning to:
 * Add swimming mechanics
 * Idle Sway
 * Camera Tilt during Sprinting or Tac Sprinting
+* Physical interactions with other physics objects 
 * Keep my sanity while trying to do all these as optimized as possible
 
 In order to maximize the code optimization I have:
