@@ -21,6 +21,7 @@ In order to maximize the code optimization I have:
 
 * Used engine calls as few as possible, and cached references when I've done as such
 * Used Resources as basically the same way Unity Components work with the GameObjects in order to organize the code, the hierarchy and improve performance, Resources are a whole lot lighter than Nodes so I assume that their inherited scripts would bring similar results.
+* Cached the Input Action names as public static readonly StringName variables in a public static class called "Mappings", just like how Godot itself caches the SignalName variables
 
 
 **IMPORTANT**
