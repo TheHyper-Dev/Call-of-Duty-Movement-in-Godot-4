@@ -17,7 +17,7 @@ I'm planning to:
 
 In order to maximize the code optimization I have:
 
-* used engine calls as few as possible, and cached references when I've done as such
+* Used engine calls as few as possible, and cached references when I've done as such
 * Used Resources as basically the same way Unity Components work with the GameObjects in order to organize the code, the hierarchy and improve performance, Resources are a whole lot lighter than Nodes so I assume that their inherited scripts would bring similar results.
 
 
