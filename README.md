@@ -3,7 +3,7 @@ A Godot 4 project that imitates the movement mechanics of Call of Duty games
 
 It features:
 * Almost the same spatial movement due to being based on Quake 3's movement system just like Call of Duty's has been 
-* Jumping (duh)
+* Jumping (bunny hopping is possible)
 * Standing, Crouching, Proning
 * Sprinting, Tactical Sprinting from Modern Warfare 2019 (Gonna implement it tomorrow)
 * Smooth Camera Follow (with or without lerping)
