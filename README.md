@@ -38,7 +38,7 @@ Here's a screenshot of the Movement Component upon clicking it
 ![image](https://github.com/TheHyper-Dev/Call-of-Duty-Movement-in-Godot-4/assets/32967925/c0dea0ea-51b2-448a-b7dd-a5aaa6544819)
  
 
-NOT FINISHED YET
+NOT FINISHED YET, will rewrite entire CharacterBody3D logic because it fucking sucks
 
 A proper ReadMe is coming soon with important things to note.
 
