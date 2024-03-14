@@ -5,17 +5,19 @@ It features:
 * Almost the same spatial movement due to being based on Quake 3's movement system just like Call of Duty's has been 
 * Jumping (bunny hopping is possible)
 * Standing, Crouching, Proning
-* Sprinting, Tactical Sprinting from Modern Warfare 2019 (Gonna implement it tomorrow)
-* Smooth Camera Follow (with or without lerping)
+* Sprinting, Tactical Sprinting from Modern Warfare 2019
+* Camera Tilt during Sprinting or Tac Sprinting
+* A stamina bar for tactical sprinting, made purely out of engine's built in assets
+* Smooth Camera Follow (with lerping)
 * Smooth Mouse Look (Smoothing is optional, you can disable the smoothing and get the raw look if you set the "Smoothing" value to 1)
 
-I'm planning to:
-* Add climbing mechanics
-* Add swimming mechanics
+I'm planning to add:
+* Climbing mechanics
+* Swimming mechanics
 * Idle Sway
-* Camera Tilt during Sprinting or Tac Sprinting
-* Physical interactions with other physics objects 
-* Keep my sanity while trying to do all these as optimized as possible
+* Physical interactions with other physics objects
+
+  I'll try to keep my sanity while trying to do all these as optimized as possible
 
 In order to maximize the code optimization I have:
 
@@ -38,15 +40,14 @@ Here's a screenshot of the Movement Component upon clicking it
 ![image](https://github.com/TheHyper-Dev/Call-of-Duty-Movement-in-Godot-4/assets/32967925/c0dea0ea-51b2-448a-b7dd-a5aaa6544819)
  
 
-NOT FINISHED YET, will rewrite entire CharacterBody3D logic because it fucking sucks
+NOT FINISHED YET, will rewrite entire CharacterBody3D logic in the far future because it fucking sucks
 
 A proper ReadMe is coming soon with important things to note.
 
-GameManager.cs must be set as an Autoload
+Game.cs must be set as an Autoload
 
-You need to assign these Input Actions by clicking in Projects/Project Settings/Input Map
-![image](https://github.com/TheHyper-Dev/Call-of-Duty-Movement-in-Godot-4/assets/32967925/b76609d5-bf26-4851-8fbb-4f76ff21dad9)
-
+The script no longer uses Input Actions set from the Godot Editor due to preventing needless engine calls
+![image](https://github.com/TheHyper-Dev/Call-of-Duty-Movement-in-Godot-4/assets/32967925/edc76794-21a4-479c-961f-d5ff18f6f41a)
 
 Read comments in the codes for further explanations.
 
