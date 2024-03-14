@@ -2,49 +2,46 @@ using Godot;
 using System;
 
 [GlobalClass]
-public sealed partial class PlayerController : CharacterBody3D
+public sealed partial class Player : CharacterBody3D
 {
     [ExportGroup("Components")]
-    [Export] public PlayerInput PlayerInput;
+    [Export] public Cmd cmd;
 
     [ExportSubgroup("Movement")]
     [Export] public Movement move;
-    [Export] public MovementData move_data;
 
     [ExportSubgroup("Look")]
     [Export] public Look look;
 
-    [ExportGroup("NodePaths")]
+    [ExportSubgroup("UI")]
+    [Export] public PlayerUI ui;
 
-    [Export]
-    public NodePath
-    world_collider_path,
-    look_path;
     public override void _EnterTree()
     {
         // Make sure to either instance the components or make them unique before initializing any of them, otherwise one of the Init() calls might fail due to being dependent of another component
         move = move == null ? new() : (Movement)move.Duplicate();
         look = look == null ? new() : (Look)look.Duplicate();
-        PlayerInput = PlayerInput == null ? new() : (PlayerInput)PlayerInput.Duplicate();
-        move_data ??= new();
+        ui = ui == null ? new() : (PlayerUI)ui.Duplicate();
+        cmd = cmd == null ? new() : (Cmd)cmd.Duplicate();
 
         move.Init(this);
         look.Init(this);
+        ui.Init(this);
+        cmd.Init(this);
+
     }
+
     public override void _UnhandledInput(InputEvent input)
     {
-        move.UnhandledInput(input);
-        look.UnhandledInput(input);
+        cmd.HandleInputs(input);
     }
     public override void _PhysicsProcess(double delta)
     {
-        float dt = (float)delta;
-        move.PhysicsUpdate(in dt);
+        move.PhysicsUpdate();
     }
     public override void _Process(double delta)
     {
-        float dt = (float)delta;
-        look.Update(in dt);
-        move.Update(in dt);
+        look.Update();
+        move.Update();
     }
 }
