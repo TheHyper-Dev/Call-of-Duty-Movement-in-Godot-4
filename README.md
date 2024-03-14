@@ -46,8 +46,12 @@ A proper ReadMe is coming soon with important things to note.
 
 Game.cs must be set as an Autoload
 
-The script no longer uses Input Actions set from the Godot Editor due to preventing needless engine calls
+The script no longer uses Input Actions set from the Godot Editor due to preventing needless engine calls, it uses a custom input sorting method
 ![image](https://github.com/TheHyper-Dev/Call-of-Duty-Movement-in-Godot-4/assets/32967925/edc76794-21a4-479c-961f-d5ff18f6f41a)
+
+This is where all the player component inputs get processed, you may create sub input-sorting methods inside the components depending on the input device of course
+![image](https://github.com/TheHyper-Dev/Call-of-Duty-Movement-in-Godot-4/assets/32967925/171adc2e-54e1-43d4-a90d-a75b57c43f07)
+
 
 Read comments in the codes for further explanations.
 
