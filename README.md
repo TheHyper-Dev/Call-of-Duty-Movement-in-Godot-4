@@ -8,20 +8,20 @@ It features:
 * Sprinting, Tactical Sprinting from Modern Warfare 2019
 * Camera Tilt during Sprinting or Tac Sprinting
 * A stamina bar for tactical sprinting, made purely out of engine's built in assets
-* Smooth Camera Follow (with lerping)
+* Smooth Camera Follow (based on player's velocity)
 * Smooth Mouse Look (Smoothing is optional, you can disable the smoothing and get the raw look if you set the "Smoothing" value to 1)
-
-I'm planning to add:
 * Climbing mechanics
 * Swimming mechanics
-* Idle Sway
+* Idle Camera Sway
+
+I'm planning to add:
 * Physical interactions with other physics objects
 
   I'll try to keep my sanity while trying to do all these as optimized as possible
 
 In order to maximize the code optimization I have:
 
-* Used engine calls as few as possible, and cached references when I've done as such
+* Used engine calls as little as possible, and cached references when I've done as such
 * Used Resources as basically the same way Unity Components work with the GameObjects in order to organize the code, the hierarchy and improve performance, Resources are a whole lot lighter than Nodes so I assume that their inherited scripts would bring similar results.
 * Cached the Input Action names as public static readonly StringName variables in a public static class called "Mappings", just like how Godot itself caches the SignalName variables
 
