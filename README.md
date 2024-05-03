@@ -28,7 +28,7 @@ In order to maximize the code optimization I have:
 
 **IMPORTANT**
 
-* If the Resource Components (such as Movement and Look) are empty (null) in the editor, the script with instance a new one with default variables,
+* If the Resource Components (such as Movement and Look) are empty (null) in the editor, the script is going to instance a new component(s) with default variables,
 if not, the script will make your Resource Components unique.
 
 * You can **still** edit or read your Resource Components and its values just like you'd do with Nodes in play mode, using the "Remote" tab in the SceneTree editor
